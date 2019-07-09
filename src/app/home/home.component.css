@@ -19,9 +19,8 @@
 }
 
 .shape1{
-    height: 67%;
     margin-top: -4rem;
-    margin-left: 2rem;
+    margin-left: 4rem;
     position: relative;
 }
 .idse{
@@ -53,10 +52,113 @@
     left: 5rem;
 }
 .running{
+    height: 65%;
     position: absolute;
-    height: 35%;
     top:1rem;
+}
+.shape2{
+    margin-top: -4rem;
+    margin-left: -5rem;
+    position: relative;
+}
+.memphis3{
+    width: 5rem;
+    position: absolute;
+    top:24rem;
+    left: 5rem;
+}
+.tennis{
+    position: absolute;
+    height: 65%;
+    top:3rem;
+    left:3rem
 }
 
 
+.abt{
+    color: #E9234D;
+    margin-left: 2rem;
+    font-size: 2.2rem;
+    border-bottom: solid 5px;
+    padding-bottom: .5rem;
+    border-image: linear-gradient(to right, #090930 , #E9234D, #090930) 1 ;
+}
 
+.about{
+    color: white;
+    margin: 3rem 6rem 2rem 2rem ;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: justify;
+  text-justify: inter-word;
+}
+
+.idse18{
+    color: #E9234D;
+    font-size: 2.2rem;
+    border-bottom: solid 5px;
+    padding-bottom: .5rem;
+    border-image: linear-gradient(to right, #090930 , #E9234D, #090930) 1 ;
+    display: inline-block
+}
+
+.idse18title{
+    text-align: center
+}
+
+.idsepara1{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: justify;
+  text-justify: inter-word;
+    margin-top: 2rem
+}
+
+.idsepara2{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.point{
+    color:white;
+    font-size: 1.2rem;
+}
+
+table.table-bordered{
+    border:2.5px solid #E9234D;
+    margin-top:20px;
+  }
+table.table-bordered > thead > tr > th{
+    border:2.5px solid #E9234D;
+}
+table.table-bordered > tbody > tr > td{
+    border:2.5px solid #E9234D;
+}
+table{
+    position: relative;
+}
+.memphis4{
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    width: 5rem;
+    z-index: -1;
+}
+.memphis5{
+    position: absolute;
+    bottom: 18rem;
+    right: -1rem;
+    width: 5rem;
+    z-index: -1;
+}
+
+.rect1{
+    height: 20rem;
+    width: 30rem;
+    border: #E9234D solid 2px;
+    border-radius: 5px;
+}
