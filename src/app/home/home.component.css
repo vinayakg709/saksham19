@@ -1,0 +1,62 @@
+.row{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 3rem;
+    height: auto;
+}
+
+.akg{
+    color: white;
+    font-size: 1.4rem;
+    margin: 1.5rem 1rem
+}
+
+.akgtitle{
+    margin: 0.5rem 1rem
+}
+
+.shape1{
+    height: 67%;
+    margin-top: -4rem;
+    margin-left: 2rem;
+    position: relative;
+}
+.idse{
+    color: white;
+    font-size: 3.5rem;
+    padding-left: 5rem;
+    padding-top: 4rem
+}
+
+.register{
+    background-image: linear-gradient(to right, #090930 , #E9234D);
+    padding: 0.4rem 2rem 0.3rem 2rem ;
+    font-size: 1.2rem;
+    border: #E9234D solid 1.5px;
+    color: white;
+    border-radius: 20px
+}
+
+.memphis1{
+    width: 5rem;
+    position: absolute;
+    top:2rem;
+    right: 5rem;
+}
+.memphis2{
+    width: 5rem;
+    position: absolute;
+    top:20rem;
+    left: 5rem;
+}
+.running{
+    position: absolute;
+    height: 35%;
+    top:1rem;
+}
+
+
+
