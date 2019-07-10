@@ -24,11 +24,15 @@
     width: 45rem;
     border: #E9234D solid 2px;
     border-radius: 5px;
-    top:5rem;
-    left: 5rem;
+    top:3rem;
+    left: 4rem;
     position: absolute;
 }
 
 .gall{
     margin: auto
+}
+.car{
+ margin-top: -28rem;
+ margin-left: 13rem
 }
