@@ -1,0 +1,34 @@
+.idse18{
+    color: #E9234D;
+    font-size: 2.2rem;
+    border-bottom: solid 5px;
+    padding-bottom: .5rem;
+    border-image: linear-gradient(to right, #090930 , #E9234D, #090930) 1 ;
+    display: inline-block
+}
+
+.idse18title{
+    text-align: center
+}
+
+.rect1{
+    height: 30rem;
+    width: 45rem;
+    border: #E9234D solid 2px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.rect2{
+    height: 30rem;
+    width: 45rem;
+    border: #E9234D solid 2px;
+    border-radius: 5px;
+    top:5rem;
+    left: 5rem;
+    position: absolute;
+}
+
+.gall{
+    margin: auto
+}

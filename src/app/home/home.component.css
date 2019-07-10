@@ -143,22 +143,17 @@ table{
 }
 .memphis4{
     position: absolute;
-    bottom: 0rem;
+    bottom: 15rem;
     left: 0rem;
     width: 5rem;
     z-index: -1;
 }
 .memphis5{
     position: absolute;
-    bottom: 18rem;
+    bottom: 32rem;
     right: -1rem;
     width: 5rem;
     z-index: -1;
 }
 
-.rect1{
-    height: 20rem;
-    width: 30rem;
-    border: #E9234D solid 2px;
-    border-radius: 5px;
-}
+
