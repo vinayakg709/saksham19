@@ -1,13 +1,16 @@
 body{
     background-color: #090930;
-    width:100vw;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
-html{
-    width:100vw;
-    overflow-x: hidden;
-  }
 
   *{
     font-family: 'Josefin Sans', sans-serif;
+}
+
+@media only screen and (max-width: 767px){
+  body{
+    overflow-x: hidden;
+  }
 }

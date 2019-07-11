@@ -36,3 +36,9 @@
  margin-top: -28rem;
  margin-left: 13rem
 }
+
+.slide-section{
+    width: 100vw;
+    padding: 0px 0px;
+    display: none;
+  }
