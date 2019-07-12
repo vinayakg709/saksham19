@@ -4,41 +4,33 @@
     border-bottom: solid 5px;
     padding-bottom: .5rem;
     border-image: linear-gradient(to right, #090930 , #E9234D, #090930) 1 ;
-    display: inline-block
+    
 }
 
 .idse18title{
-    text-align: center
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.rect1{
-    height: 30rem;
-    width: 45rem;
-    border: #E9234D solid 2px;
-    border-radius: 5px;
+.gally{
     position: relative;
-}
-
-.rect2{
-    height: 30rem;
-    width: 45rem;
-    border: #E9234D solid 2px;
-    border-radius: 5px;
-    top:3rem;
-    left: 4rem;
-    position: absolute;
+    
 }
 
 .gall{
-    margin: auto
+    margin: auto;
+    padding: 1rem 5rem;
 }
 .car{
- margin-top: -28rem;
- margin-left: 13rem
+   position: absolute;
+
 }
 
-.slide-section{
-    width: 100vw;
-    padding: 0px 0px;
-    display: none;
-  }
+
+@media only screen and (max-width: 768px){
+    .idse18{
+        font-size: 1.5rem;
+        border-bottom: solid 4px;
+        padding-bottom: .2rem;
+    }
+}
