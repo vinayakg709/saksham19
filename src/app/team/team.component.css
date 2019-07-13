@@ -1,0 +1,71 @@
+.idse18{
+    color: #E9234D;
+    font-size: 2.2rem;
+    border-bottom: solid 5px;
+    padding-bottom: .5rem;
+    border-image: linear-gradient(to right, #090930 , #E9234D, #090930) 1 ;
+    
+}
+
+.idse18title{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.org{
+    margin: auto;
+    padding: 0rem 5rem;
+
+}
+
+.orimg{
+    height: 11rem;
+    width: auto;
+}
+
+.sqa{
+    text-align: center;
+    position: relative;
+}
+
+.memimg{
+    height: 28vh;
+    width: auto;
+    position: absolute;
+    top: 1.5vh;
+    left: 8.5vw;
+}
+.memname{
+    color: white;
+    position: absolute
+}
+
+
+@media only screen and (max-width: 768px){
+    .idse18{
+        font-size: 1.5rem;
+        border-bottom: solid 4px;
+        padding-bottom: .2rem;
+    }
+
+    .idse18title{
+        margin-bottom: 1rem;
+    }
+
+    .memimg{
+        height: 12vh;
+        width: auto;
+        position: absolute;
+        top: 0.8vh;
+        left: 6vw;
+    }
+
+    .org{
+        margin: auto;
+        padding: 0rem 0rem;
+    }
+    .orimg{
+        height: auto;
+    }
+}
