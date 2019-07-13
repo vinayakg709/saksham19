@@ -38,7 +38,16 @@
 }
 .memname{
     color: white;
-    position: absolute
+    font-size: 1.3rem;
+    padding-top: 1rem;
+}
+
+.mem{
+    padding: 0rem 6rem;
+}
+
+.team{
+    padding: 0rem 3rem
 }
 
 
@@ -67,5 +76,17 @@
     }
     .orimg{
         height: auto;
+    }
+
+    .mem{
+        padding: 0rem 0rem;
+    }
+
+    .memname{
+        font-size: 0.5rem;
+        padding-top: 0.5rem;
+    }
+    .team{
+        padding: 0rem 0rem;
     }
 }
