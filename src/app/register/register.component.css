@@ -1,0 +1,26 @@
+.idse18{
+    color: #E9234D;
+    font-size: 2.2rem;
+    border-bottom: solid 5px;
+    padding-bottom: .5rem;
+    border-image: linear-gradient(to right, #090930 , #E9234D, #090930) 1 ;
+    
+}
+
+.idse18title{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 768px){
+    .idse18{
+        font-size: 1.5rem;
+        border-bottom: solid 4px;
+        padding-bottom: .2rem;
+    }
+
+    .idse18title{
+        margin-bottom: 1rem;
+    }
+}

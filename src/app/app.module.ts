@@ -8,21 +8,24 @@ import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { TeamComponent } from './team/team.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     GalleryComponent,
-    TeamComponent
+    TeamComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SlickCarouselModule,
     BrowserAnimationsModule,
-    AngularTiltModule
+    AngularTiltModule,
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
