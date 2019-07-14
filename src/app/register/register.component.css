@@ -7,10 +7,33 @@
     
 }
 
+
+
 .idse18title{
     text-align: center;
     margin-bottom: 2rem;
     margin-top: 2rem;
+}
+
+input{
+    background-color:transparent;
+}
+
+input:focus{
+    border: #E9234D solid 1px;
+    background-color:transparent;
+    box-shadow: 0px 0px 10px #E9234D
+}
+
+.regform{
+    color: white;
+}
+
+.validation{
+    font-size: 0.75rem;
+    margin-top: -1em;
+    font-weight: 300;
+    display: none;
 }
 
 @media only screen and (max-width: 768px){
@@ -22,5 +45,9 @@
 
     .idse18title{
         margin-bottom: 1rem;
+    }
+
+    input:focus{
+        box-shadow: 0px 0px 8px #E9234D
     }
 }
