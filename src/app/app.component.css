@@ -9,8 +9,54 @@ body{
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.multiselect-dropdown .dropdown-btn{
+  border: #ffffff 1px solid !important;
+
+}
+
+.multiselect-dropdown .dropdown-btn:focus{
+  box-shadow: 0px 0px 8px #E9234D !important;
+  border: #E9234D 1px solid !important;
+}
+
+.dropdown-list{
+  background: #090930 !important;
+  color: #ffffff !important;
+}
+
+.multiselect-item-checkbox input[type=checkbox]+ div{
+  color: #ffffff !important;
+  
+}
+
+
+.multiselect-item-checkbox input[type=checkbox]+ div::before{
+  border: #E9234D 2px solid !important;
+  background: #090930 !important;
+  
+}
+
+.multiselect-dropdown .dropdown-btn .selected-item{
+  border: #E9234D 1px solid !important;
+  background: #E9234D !important;
+}
+
+.multiselect-dropdown .dropdown-btn .dropdown-down{
+  border-top: white 10px solid !important;
+}
+
+
+
+
 @media only screen and (max-width: 767px){
   body{
     overflow-x: hidden;
   }
+
+  .multiselect-dropdown .dropdown-btn{
+    border: #ffffff 1px solid !important;
+    font-weight: 300 !important;
+  }
+
+
 }

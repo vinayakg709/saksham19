@@ -1,0 +1,22 @@
+.foot{
+    background-image: linear-gradient(to bottom, transparent,rgba(233, 35, 78, 0.507) );
+    /* height: 90px; */
+    
+}
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+.dd{
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+    
+}
+
+.si{
+    color: #007bff;
+}

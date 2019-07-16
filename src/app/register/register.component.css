@@ -15,25 +15,52 @@
     margin-top: 2rem;
 }
 
-input{
+input,select{
     background-color:transparent;
-}
-
-input:focus{
-    border: #E9234D solid 1px;
-    background-color:transparent;
-    box-shadow: 0px 0px 10px #E9234D
-}
-
-.regform{
     color: white;
 }
+
+input:focus, select:focus{
+    border: #E9234D solid 1px;
+    background-color:transparent;
+    box-shadow: 0px 0px 10px #E9234D;
+    color: white
+}
+
+.regform, select{
+    color: white;
+    font-weight: 400;
+}
+
+option{
+    color: white;
+    background-color: #090930;
+}
+
 
 .validation{
     font-size: 0.75rem;
     margin-top: -1em;
     font-weight: 300;
     display: none;
+}
+
+
+.regbtn{
+    color: white;
+    border: #E9234D solid 2px;
+    margin: 2rem 0rem;
+    padding: 0.2rem 7rem;
+    font-size: 1.3rem
+    
+}
+
+.regbtn:hover{
+    background-color: #E9234D;
+    /* position: absolute; */
+    /* transform: skewX(15deg); */
+    transition: 2s;
+
 }
 
 @media only screen and (max-width: 768px){
@@ -49,5 +76,20 @@ input:focus{
 
     input:focus{
         box-shadow: 0px 0px 8px #E9234D
+    }
+
+    
+    .regform, select{
+        color: white;
+        font-weight: 300;
+    }
+
+    .regbtn{
+        
+        margin: 2rem 0rem;
+        padding: 0.1rem 3rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+        
     }
 }

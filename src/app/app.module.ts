@@ -10,6 +10,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { TeamComponent } from './team/team.component';
 import { RegisterComponent } from './register/register.component';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -19,6 +21,7 @@ import { RegisterComponent } from './register/register.component';
     GalleryComponent,
     TeamComponent,
     RegisterComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +30,7 @@ import { RegisterComponent } from './register/register.component';
     BrowserAnimationsModule,
     AngularTiltModule,
     FormsModule,
+    NgMultiSelectDropDownModule.forRoot()
   ],
   
   providers: [],
