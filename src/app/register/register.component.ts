@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -8,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class RegisterComponent implements OnInit {
 
   constructor() { }
+  onSubmit(form : NgForm){
+    console.log(form);
+  }
   dropdownList = [];
   selectedItems = [];
   dropdownSettings = {};
@@ -40,6 +44,7 @@ export class RegisterComponent implements OnInit {
       itemsShowLimit: 3,
       allowSearchFilter: false
     };
+
   }
 
   onItemSelect(item: any) {

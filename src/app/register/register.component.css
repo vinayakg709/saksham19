@@ -41,8 +41,9 @@ option{
 .validation{
     font-size: 0.75rem;
     margin-top: -1em;
-    font-weight: 300;
-    display: none;
+    /* font-weight: 300; */
+    /* display: none; */
+    color: red;
 }
 
 
@@ -62,6 +63,10 @@ option{
     transition: 2s;
 
 }
+input.ng-invalid.ng-touched{
+    border: red 1px solid;
+}
+
 
 @media only screen and (max-width: 768px){
     .idse18{
@@ -85,11 +90,9 @@ option{
     }
 
     .regbtn{
-        
         margin: 2rem 0rem;
         padding: 0.1rem 3rem;
         font-size: 1.2rem;
         font-weight: 300;
-        
     }
 }
