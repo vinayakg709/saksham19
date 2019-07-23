@@ -12,6 +12,9 @@ import { TeamComponent } from './team/team.component';
 import { RegisterComponent } from './register/register.component';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { FooterComponent } from './footer/footer.component';
+import { ServerService } from './services/server.service';
+import { HttpClientModule } from '@angular/common/http';
+import { from } from 'rxjs';
 
 
 @NgModule({
@@ -30,10 +33,11 @@ import { FooterComponent } from './footer/footer.component';
     BrowserAnimationsModule,
     AngularTiltModule,
     FormsModule,
-    NgMultiSelectDropDownModule.forRoot()
+    NgMultiSelectDropDownModule.forRoot(),
+    HttpClientModule
   ],
   
-  providers: [],
+  providers: [ServerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

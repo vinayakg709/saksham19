@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { ServerService } from 'src/app/services/server.service'
 
 @Component({
   selector: 'app-register',
@@ -8,9 +9,14 @@ import { NgForm } from '@angular/forms';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ss:ServerService) { }
   onSubmit(form : NgForm){
-    console.log(form);
+    this.ss.postRegister(form.value).subscribe(
+      res => {
+        console.log(res)
+      }
+    )
+    console.log(form.value);
   }
   dropdownList = [];
   selectedItems = [];
@@ -18,21 +24,22 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
 
     this.dropdownList = [
-      { item_id: 1, item_text: 'Football' },
-      { item_id: 2, item_text: 'Basketball' },
-      { item_id: 3, item_text: 'Kho-kho' },
-      { item_id: 4, item_text: 'Athletics' },
-      { item_id: 5, item_text: 'Cricket' },
-      { item_id: 6, item_text: 'Power lifting' },
-      { item_id: 7, item_text: 'Badminton' },
-      { item_id: 8, item_text: 'Kabaddi' },
-      { item_id: 9, item_text: 'Volleyball' },
-      { item_id: 10, item_text: 'Pool' },
-      { item_id: 11, item_text: 'Table Tennis' },
-      { item_id: 12, item_text: 'Tg of War' },
-      { item_id: 13, item_text: 'Chess' },
-      { item_id: 14, item_text: 'Carrom' },
-      { item_id: 15, item_text: 'Obstacle Race' },
+      'Football','basketball','kho-kho'
+      // { item_id: 1, item_text: 'Football' },
+      // { item_id: 2, item_text: 'Basketball' },
+      // { item_id: 3, item_text: 'Kho-kho' },
+      // { item_id: 4, item_text: 'Athletics' },
+      // { item_id: 5, item_text: 'Cricket' },
+      // { item_id: 6, item_text: 'Power lifting' },
+      // { item_id: 7, item_text: 'Badminton' },
+      // { item_id: 8, item_text: 'Kabaddi' },
+      // { item_id: 9, item_text: 'Volleyball' },
+      // { item_id: 10, item_text: 'Pool' },
+      // { item_id: 11, item_text: 'Table Tennis' },
+      // { item_id: 12, item_text: 'Tg of War' },
+      // { item_id: 13, item_text: 'Chess' },
+      // { item_id: 14, item_text: 'Carrom' },
+      // { item_id: 15, item_text: 'Obstacle Race' },
     ];
 
     this.dropdownSettings = {
