@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ServerService } from './services/server.service';
 import { HttpClientModule } from '@angular/common/http';
 import { from } from 'rxjs';
+import { TableComponent } from './table/table.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { from } from 'rxjs';
     TeamComponent,
     RegisterComponent,
     FooterComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,
