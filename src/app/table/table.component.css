@@ -1,0 +1,12 @@
+.abt{
+    color: #E9234D;
+    margin-left: 2rem;
+    font-size: 2.2rem;
+    border-bottom: solid 5px;
+    padding-bottom: .5rem;
+    border-image: linear-gradient(to right, #090930 , #E9234D, #090930) 1 ;
+}
+
+.tab{
+    color:white;
+}

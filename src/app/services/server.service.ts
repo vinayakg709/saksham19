@@ -14,4 +14,11 @@ export class ServerService {
      });
     return this.http.post(this.rootUrl+ 'api/register',data, {headers: headers});
   }
+
+  getRegister(){
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json; charset=utf-8',
+     });
+     return this.http.get(this.rootUrl+ 'api/register', {headers: headers});
+  }
 }

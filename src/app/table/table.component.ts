@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServerService } from '../services/server.service';
 
 @Component({
   selector: 'app-table',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
-
-  constructor() { }
+  data: any;
+  constructor(private ss: ServerService) { }
 
   ngOnInit() {
+    this.ss.getRegister().subscribe(
+      res=>{
+        console.log(res);
+        this.data = res;
+      }
+    )
   }
 
 }

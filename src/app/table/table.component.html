@@ -1,1 +1,17 @@
-<p>table works!</p>
+<div class="container text-center">
+            <span class="abt">
+                    Registered Entry : {{data.length}}
+                </span>
+    
+    <div class="row tab">
+        <div *ngFor="let i of data;">
+            
+        <div *ngFor="let j of i.sports;">
+                {{j}} <br>
+        </div>
+            
+
+        </div>
+    </div>
+    
+</div>
