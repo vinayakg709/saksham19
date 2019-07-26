@@ -8,38 +8,15 @@ import { ServerService } from 'src/app/services/server.service'
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-
-  constructor(private ss:ServerService) { }
-  onSubmit(form : NgForm){
-    this.ss.postRegister(form.value).subscribe(
-      res => {
-        console.log(res)
-      }
-    )
-    console.log(form.value);
-  }
   dropdownList = [];
   selectedItems = [];
   dropdownSettings = {};
+  constructor(private ss:ServerService) { }
+ 
   ngOnInit() {
 
     this.dropdownList = [
-      'Football','basketball','kho-kho'
-      // { item_id: 1, item_text: 'Football' },
-      // { item_id: 2, item_text: 'Basketball' },
-      // { item_id: 3, item_text: 'Kho-kho' },
-      // { item_id: 4, item_text: 'Athletics' },
-      // { item_id: 5, item_text: 'Cricket' },
-      // { item_id: 6, item_text: 'Power lifting' },
-      // { item_id: 7, item_text: 'Badminton' },
-      // { item_id: 8, item_text: 'Kabaddi' },
-      // { item_id: 9, item_text: 'Volleyball' },
-      // { item_id: 10, item_text: 'Pool' },
-      // { item_id: 11, item_text: 'Table Tennis' },
-      // { item_id: 12, item_text: 'Tg of War' },
-      // { item_id: 13, item_text: 'Chess' },
-      // { item_id: 14, item_text: 'Carrom' },
-      // { item_id: 15, item_text: 'Obstacle Race' },
+      'Football','Basketball','Kho-kho','Cricket'
     ];
 
     this.dropdownSettings = {
@@ -60,5 +37,21 @@ export class RegisterComponent implements OnInit {
   onSelectAll(items: any) {
     console.log(items);
   }
+
+  onSubmit(form : NgForm){
+    this.ss.postRegister(form.value).subscribe(
+      res => {
+        console.log(res)
+      }
+    )
+    console.log(form.value);
+
+    form.reset();
+    
+  }
+
+  resetSelection() {
+    this.selectedItems = [];        
+    }
 
 }

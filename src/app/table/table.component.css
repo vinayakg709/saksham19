@@ -1,6 +1,6 @@
 .abt{
     color: #E9234D;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     font-size: 2.2rem;
     border-bottom: solid 5px;
     padding-bottom: .5rem;
@@ -9,4 +9,9 @@
 
 .tab{
     color:white;
+}
+
+table{
+    color:white;
+    margin-top: 3rem;
 }

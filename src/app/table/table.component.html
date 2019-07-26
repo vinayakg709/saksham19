@@ -1,14 +1,50 @@
-<div class="container text-center">
+<div class="container text-center" style="padding-top: 2rem">
             <span class="abt">
                     Registered Entry : {{data.length}}
                 </span>
     
-    <div class="row tab">
-        <div *ngFor="let i of data;">
+    <div class="row">
+        <div class="mx-auto">
             
-        <div *ngFor="let j of i.sports;">
+        <!-- <div *ngFor="let j of i.sports;">
                 {{j}} <br>
-        </div>
+        </div> -->
+
+        <table class="table table-bordered point tab1">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Student no.</th>
+                        <th scope="col">Contact no.</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Branch</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Hosteler</th>
+                        <th scope="col">Sports</th>
+
+
+                    </tr>
+                </thead>
+                <tbody *ngFor="let i of data;">
+                    <tr>
+                        <td scope="col">{{i.name}}</td>
+                        <td scope="col">{{i.studentno}}</td>
+                        <td scope="col">{{i.contactno}}</td>
+                        <td scope="col">{{i.email}}</td>
+                        <td scope="col">{{i.gender}}</td>
+                        <td scope="col">{{i.branch}}</td>
+                        <td scope="col">{{i.year}}</td>
+                        <td scope="col">{{i.hosteler}}</td>
+                        <td scope="col" > <span *ngFor="let j of i.sports;"> {{j}} <br></span> </td>
+
+
+
+                    </tr>
+                </tbody>
+                
+            </table>
+
             
 
         </div>
