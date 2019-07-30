@@ -5,6 +5,10 @@ body{
     padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
   *{
     font-family: 'Josefin Sans', sans-serif;
 }

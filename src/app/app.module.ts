@@ -14,8 +14,10 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { FooterComponent } from './footer/footer.component';
 import { ServerService } from './services/server.service';
 import { HttpClientModule } from '@angular/common/http';
-import { from } from 'rxjs';
 import { TableComponent } from './table/table.component';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
 
 
 @NgModule({
@@ -27,6 +29,7 @@ import { TableComponent } from './table/table.component';
     RegisterComponent,
     FooterComponent,
     TableComponent,
+    AdminLoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,10 @@ import { TableComponent } from './table/table.component';
     AngularTiltModule,
     FormsModule,
     NgMultiSelectDropDownModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    NgxPageScrollCoreModule,
+    NgxPageScrollModule
+
   ],
   
   providers: [ServerService],

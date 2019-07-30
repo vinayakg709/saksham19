@@ -1,0 +1,36 @@
+<div class="container text-center" style="padding-top: 2rem">
+    <span class="abt">
+        Admin Login
+    </span>
+</div>
+<div class="container" style="padding-top: 2rem" >
+        <form (ngSubmit) = "onAdmin(a)" #a="ngForm">
+                <div class="row justify-content-center no-gutter regform">
+                        <div class="col-md-5 mt-md-3 mt-2">
+                                <label for="admin">Admin</label>
+                                <div class="input-group mb-3">
+                                  <input type="text" class="form-control" id="admin" ngModel required name="admin" pattern="^[a-zA-Z ]*$"  #admin='ngModel' >
+                                </div>
+                                <div class='validation' *ngIf="!admin.valid && admin.touched && admin.dirty" >Invalid Admin</div>
+                                <div class='validation' *ngIf="!admin.valid && admin.touched && !admin.dirty" >Admin can't be empty.</div>
+                        </div>
+                    </div>
+                        <div class="row justify-content-center no-gutter regform">
+                                <div class="col-md-5 mt-md-3 mt-2">
+                                        <label for="password">Password</label>
+                                        <div class="input-group mb-3">
+                                          <input type="password" class="form-control" id="password" ngModel required name="password"  #password='ngModel' >
+                                        </div>
+                                        <div class='validation' *ngIf="!password.valid && password.touched && password.dirty" >Invalid password</div>
+                                        <div class='validation' *ngIf="!password.valid && password.touched && !password.dirty" >Password can't be empty.</div>
+                                </div>
+                        </div>
+                        
+                        <div class="row justify-content-center no-gutter">
+                                <button type="submit" class="btn regbtn" [disabled]='!a.valid'>Login</button>
+                </div>
+                
+               
+            </form>
+</div>
+    

@@ -11,12 +11,15 @@ export class TableComponent implements OnInit {
   constructor(private ss: ServerService) { }
 
   ngOnInit() {
-    this.ss.getRegister().subscribe(
-      res=>{
-        console.log(res);
-        this.data = res;
-      }
-    )
+    if(this.ss.adminLoggedIn()){
+      this.ss.getRegister().subscribe(
+        res=>{
+          console.log(res);
+          this.data = res;
+        }
+      )
+    }
+   
   }
 
 }

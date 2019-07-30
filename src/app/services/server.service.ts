@@ -21,4 +21,31 @@ export class ServerService {
      });
      return this.http.get(this.rootUrl+ 'api/register', {headers: headers});
   }
+
+  postAdmin(data:any){
+    const headers = new HttpHeaders({  
+      'Content-Type': 'application/json; charset=utf-8',
+     });
+    return this.http.post(this.rootUrl+ 'api/login',data, {headers: headers});
+  }
+
+
+  setAdmintoken(token: string) {
+    localStorage.setItem('admin', token);
+  }
+
+  getAdminToken() {
+    return localStorage.getItem('admin');
+  }
+
+  adminLoggedIn() {
+    if (this.getAdminToken()) {
+        return true;
+    }
+        return false;
+  }
+
+  removeAdminToken() {
+    localStorage.removeItem('admin');
+  }
 }
