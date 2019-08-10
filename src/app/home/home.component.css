@@ -46,7 +46,29 @@
     font-size: 1.2rem;
     border: #E9234D solid 1.5px;
     color: white;
-    border-radius: 20px
+    border-radius: 20px;
+    
+}
+
+.register:hover{
+  animation-name: pulse;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 .memphis1,.memphis6{
@@ -417,8 +439,14 @@ table{
       font-weight: 300;
       border: #E9234D solid 1px;
       color: white;
-      border-radius: 20px
+      border-radius: 20px;
+      animation-name: pulse 2s;
   }
+
+  .register a:hover{
+    animation-name: pulse 2s;
+  }
+ 
 
   .shape1{
     margin-top: 1rem;

@@ -1,15 +1,12 @@
-<div class="container text-center" style="padding-top: 2rem">
+<div *ngIf='check()'>
+
+<div class="container text-center" style="padding-top: 2rem" >
             <span class="abt">
                     Registered Entry : {{data.length}}
                 </span>
     
     <div class="row">
         <div class="mx-auto">
-            
-        <!-- <div *ngFor="let j of i.sports;">
-                {{j}} <br>
-        </div> -->
-
         <table class="table table-bordered point tab1">
                 <thead>
                     <tr>
@@ -35,17 +32,12 @@
                         <td scope="col">{{i.year}}</td>
                         <td scope="col">{{i.hosteler}}</td>
                         <td scope="col" > <span *ngFor="let j of i.sports;"> {{j}} <br></span> </td>
-
-
-
                     </tr>
                 </tbody>
                 
             </table>
-
-            
-
         </div>
     </div>
     
+</div>
 </div>

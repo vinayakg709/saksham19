@@ -15,9 +15,10 @@ export class ServerService {
     return this.http.post(this.rootUrl+ 'api/register',data, {headers: headers});
   }
 
-  getRegister(){
+  getRegister(token:any){
     const headers = new HttpHeaders({
       'Content-Type': 'application/json; charset=utf-8',
+      'Authorization': 'Bearer ' +  token
      });
      return this.http.get(this.rootUrl+ 'api/register', {headers: headers});
   }
