@@ -12,17 +12,13 @@ export class TableComponent implements OnInit {
   constructor(private ss: ServerService, private router: Router) { }
 
   ngOnInit() {
-    
-    
     this.ss.getRegister(this.ss.getAdminToken()).subscribe(
       res=>{
         console.log(res);
         this.data = res;
       }
     )
-      
-    
-   
+
   }
 
   check() {
@@ -31,5 +27,11 @@ export class TableComponent implements OnInit {
     }else{
       return true;
     }
+  }
+
+  logout(){
+    this.ss.removeAdminToken();
+    window.location.reload();
+    this.router.navigate(['']);
   }
 }

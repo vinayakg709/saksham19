@@ -21,6 +21,11 @@
     color: #007bff;
 }
 
+.silogo{
+    height: 1.5rem;
+    margin: 0rem 0.3rem;
+}
+
 @media only screen and (max-width: 768px){
     .dd{
         text-align: center;

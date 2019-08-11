@@ -8,7 +8,8 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'login', component: AdminLoginComponent},
-  {path: 'admin', component: TableComponent}
+  {path: 'admin', component: TableComponent},
+  {path: '**', component: HomeComponent}
 
 ];
 

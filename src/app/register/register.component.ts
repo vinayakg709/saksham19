@@ -51,7 +51,7 @@ export class RegisterComponent implements OnInit {
   }
 
   resetSelection() {
-    this.selectedItems = [];        
+    window.location.reload();     
     }
 
 }

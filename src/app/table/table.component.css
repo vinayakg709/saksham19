@@ -15,3 +15,18 @@ table{
     color:white;
     margin-top: 3rem;
 }
+
+.regbtn{
+    color: white;
+    border: #E9234D solid 2px;
+    margin: 2rem 5rem;
+    padding: 0.2rem 5rem;
+    font-size: 1.3rem
+    
+}
+
+.regbtn:hover{
+    background-color: #E9234D;
+    transition: 2s;
+
+}
