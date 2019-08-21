@@ -15,10 +15,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ServerService } from './services/server.service';
 import { HttpClientModule } from '@angular/common/http';
 import { TableComponent } from './table/table.component';
-import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
-import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
-
+import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
 
 @NgModule({
   declarations: [
@@ -38,11 +36,11 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
     BrowserAnimationsModule,
     AngularTiltModule,
     FormsModule,
-    NgMultiSelectDropDownModule.forRoot(),
+    NgMultiSelectDropDownModule,
     HttpClientModule,
-    NgxPageScrollCoreModule,
-    NgxPageScrollModule
-
+    RecaptchaModule.forRoot(),
+    RecaptchaFormsModule
+    
   ],
   
   providers: [ServerService],

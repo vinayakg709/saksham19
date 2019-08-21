@@ -50,6 +50,11 @@
     padding: 0rem 3rem
 }
 
+.desname{
+    color: white;
+    font-weight: 200;
+}
+
 
 @media only screen and (max-width: 768px){
     .idse18{

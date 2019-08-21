@@ -34,4 +34,24 @@ export class TableComponent implements OnInit {
     window.location.reload();
     this.router.navigate(['']);
   }
+
+  onDelete(pi:string){
+
+    console.log({pi});
+    this.ss.postDelete({pi}).subscribe(
+      res=>{
+        console.log('deleted');
+        this.ss.getRegister(this.ss.getAdminToken()).subscribe(
+          res2 => {
+            this.data = res2;
+          },
+          err=>{
+            console.log(err);
+          }
+        )
+      }, err => {
+        console.log(err);
+      }
+    )
+  }
 }

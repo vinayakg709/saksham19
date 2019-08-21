@@ -12,6 +12,7 @@ export class ServerService {
     const headers = new HttpHeaders({
       'Content-Type': 'application/json; charset=utf-8',
      });
+     console.log(data);
     return this.http.post(this.rootUrl+ 'api/register',data, {headers: headers});
   }
 
@@ -28,6 +29,14 @@ export class ServerService {
       'Content-Type': 'application/json; charset=utf-8',
      });
     return this.http.post(this.rootUrl+ 'api/login',data, {headers: headers});
+  }
+
+  postDelete(data:any){
+    const headers = new HttpHeaders({  
+      'Content-Type': 'application/json; charset=utf-8',
+     });
+     console.log(data);
+     return this.http.post(this.rootUrl+ 'api/delete',data);
   }
 
 
