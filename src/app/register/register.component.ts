@@ -36,7 +36,8 @@ export class RegisterComponent implements OnInit {
     { id: 4, name: 'ECE' },
     { id: 5, name: 'EN' },
     { id: 6, name: 'EI' },
-    { id: 7, name: 'MCA' }
+    { id: 7, name: 'MCA' },
+    { id: 8, name: 'MBA' }
   ];
   
   resolved(captchaResponse: string) {

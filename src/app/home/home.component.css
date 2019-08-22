@@ -157,7 +157,7 @@
   animation-name: jello;
   animation-duration: 0.8s;
   animation-timing-function: ease-in-out;
-  /* animation-iteration-count: infinite; */
+  animation-iteration-count: infinite;
 }
 
 .register:hover{

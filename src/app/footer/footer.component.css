@@ -18,13 +18,14 @@
 }
 
 .si{
-    color: #007bff;
+    color: #007bff !important;
 }
 
 
 .foot{
     margin-top: 1.7rem;
 }
+
 
 @media only screen and (max-width: 768px){
     .dd{
