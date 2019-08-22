@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { TableComponent } from './table/table.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
+// import {Swal} from 'sweetalert2';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
     NgMultiSelectDropDownModule,
     HttpClientModule,
     RecaptchaModule.forRoot(),
-    RecaptchaFormsModule
+    RecaptchaFormsModule,
+    // Swal
     
   ],
   

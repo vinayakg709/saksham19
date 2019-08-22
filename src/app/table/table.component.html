@@ -33,7 +33,7 @@
                         <td scope="col">{{i.branch}}</td>
                         <td scope="col">{{i.year}}</td>
                         <td scope="col">{{i.hosteler}}</td> 
-                        <td scope="col">{{i._id}}</td>        
+                        <!-- <td scope="col">{{i._id}}</td>         -->
                         <td scope="col" > <span *ngFor="let j of i.sports;"> {{j}} <br></span> </td>
                         <td scope="col"><button type="submit" class="btn btn-danger" (click)="onDelete(i._id)">Delete</button></td> 
                     </tr>

@@ -5,14 +5,14 @@ import{ HttpClient,HttpHeaders  } from '@angular/common/http'
   providedIn: 'root'
 })
 export class ServerService {
-  readonly rootUrl = 'http://localhost:8000/';
+  readonly rootUrl = './';
   constructor(private http: HttpClient) { }
 
   postRegister(data:any){
     const headers = new HttpHeaders({
       'Content-Type': 'application/json; charset=utf-8',
      });
-     console.log(data);
+    //  console.log(data);
     return this.http.post(this.rootUrl+ 'api/register',data, {headers: headers});
   }
 

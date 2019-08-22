@@ -5,7 +5,7 @@
                 </span>
         </div>
 
-        <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm" autocomplete="off">
                 <div class="container">
                         <div class="row justify-content-center no-gutter regform">
 
@@ -120,7 +120,7 @@
                                 </div>
                         </div>
 
-                        <div class="row justify-content-center no-gutter">
+                        <div class="row justify-content-center no-gutter capbtn">
                                 <re-captcha (resolved)="resolved($event)"
                                         siteKey="6Lc_erMUAAAAAFnlJh8hYO7Uj9CZW95vTcdzKALA" required class="captcha"
                                         name="response" [(ngModel)]="recap"></re-captcha>

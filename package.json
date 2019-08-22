@@ -39,6 +39,7 @@
     "rxjs": "~6.4.0",
     "scrollreveal": "^4.0.5",
     "slick-carousel": "^1.8.1",
+    "sweetalert2": "^8.16.2",
     "tslib": "^1.9.0",
     "vanilla-tilt": "^1.7.0",
     "wowjs": "^1.1.3",

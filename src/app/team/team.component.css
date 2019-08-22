@@ -91,6 +91,10 @@
         font-size: 0.5rem;
         padding-top: 0.5rem;
     }
+
+    .desname{
+        font-size: 0.4rem;
+    }
     .team{
         padding: 0rem 0rem;
     }

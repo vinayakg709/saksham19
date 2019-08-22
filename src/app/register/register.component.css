@@ -76,6 +76,12 @@ input.ng-invalid.ng-touched{
     margin-top: 1rem;
 }
 
+.capbtn{
+    margin-top: 2rem;
+}
+
+
+
 @media only screen and (max-width: 768px){
     .idse18{
         font-size: 1.5rem;
@@ -106,5 +112,9 @@ input.ng-invalid.ng-touched{
 
     .captcha{
         margin-right: 0rem;
+    }
+
+    .capbtn{
+        margin-top: 1rem;
     }
 }
