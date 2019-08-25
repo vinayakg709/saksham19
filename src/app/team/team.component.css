@@ -43,7 +43,7 @@
 }
 
 .mem{
-    padding: 0rem 6rem;
+    padding: 0rem 7rem;
 }
 
 .team{
@@ -52,7 +52,12 @@
 
 .desname{
     color: white;
-    font-weight: 200;
+    font-weight: 400;
+}
+
+.oh3{
+    margin-top: 2rem;
+    /* padding: 2rem; */
 }
 
 
@@ -97,5 +102,8 @@
     }
     .team{
         padding: 0rem 0rem;
+    }
+    .oh3{
+        margin-top: 1.5rem;
     }
 }

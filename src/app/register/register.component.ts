@@ -20,6 +20,7 @@ export class RegisterComponent implements OnInit {
   recap:any;
   isHidden:any;
   resetSelection: any;
+  Loading = false;
 
   year: any[] = [
     { id: 0, name: '1' },
@@ -74,9 +75,10 @@ export class RegisterComponent implements OnInit {
   }
 
   onSubmit(form : NgForm){
-    
+    this.Loading = true;
     this.ss.postRegister(form.value).subscribe(
       res => {
+        this.Loading = false;
         // console.log(res);
         Swal.fire({
           title: 'Successfully Registered',
