@@ -14,7 +14,7 @@ export class TableComponent implements OnInit {
   ngOnInit() {
     this.ss.getRegister(this.ss.getAdminToken()).subscribe(
       res=>{
-        console.log(res);
+        // console.log(res);
         this.data = res;
       }
     )
@@ -37,7 +37,7 @@ export class TableComponent implements OnInit {
 
   onDelete(pi:string){
 
-    console.log({pi});
+    // console.log({pi});
     this.ss.postDelete({pi}).subscribe(
       res=>{
         console.log('deleted');
@@ -46,11 +46,11 @@ export class TableComponent implements OnInit {
             this.data = res2;
           },
           err=>{
-            console.log(err);
+            // console.log(err);
           }
         )
       }, err => {
-        console.log(err);
+        // console.log(err);
       }
     )
   }

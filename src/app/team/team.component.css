@@ -60,6 +60,12 @@
     /* padding: 2rem; */
 }
 
+@media only screen and (max-width: 1024px){
+    .mem{
+        padding: 0rem 3rem;
+    }
+}
+
 
 @media only screen and (max-width: 768px){
     .idse18{
@@ -89,12 +95,12 @@
     }
 
     .mem{
-        padding: 0rem 0rem;
+        padding: 0rem 0rem !important;
     }
 
     .memname{
-        font-size: 0.5rem;
-        padding-top: 0.5rem;
+        font-size: 0.6rem;
+        padding-top: 0.6rem;
     }
 
     .desname{
@@ -105,5 +111,9 @@
     }
     .oh3{
         margin-top: 1.5rem;
+    }
+    .col-md-4, .col-sm-4{
+        padding-right:10px !important;
+        padding-left: 10px !important;
     }
 }

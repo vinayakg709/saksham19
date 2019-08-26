@@ -42,7 +42,7 @@ export class RegisterComponent implements OnInit {
   ];
   
   resolved(captchaResponse: string) {
-    console.log(`Resolved captcha with response: ${captchaResponse}`);
+    // console.log(`Resolved captcha with response: ${captchaResponse}`);
     this.captc=true;
     // console.log(this.captc);
 }
@@ -68,10 +68,10 @@ export class RegisterComponent implements OnInit {
   }
 
   onItemSelect(item: any) {
-    console.log(item);
+    // console.log(item);
   }
   onSelectAll(items: any) {
-    console.log(items);
+    // console.log(items);
   }
 
   onSubmit(form : NgForm){

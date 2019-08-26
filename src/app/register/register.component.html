@@ -119,8 +119,8 @@
 
                         <div class="row justify-content-center no-gutter regform">
                                 <div class="col-md-10 mt-md-3 mt-2">
-                                        <label class="lab" for="sports">Intrested Sports</label>
-                                        <ng-multiselect-dropdown [placeholder]="'Intrested Sports'"
+                                        <label class="lab" for="sports">Interested Sports</label>
+                                        <ng-multiselect-dropdown [placeholder]="'Interested Sports'"
                                                 [data]="dropdownList" [settings]="dropdownSettings"
                                                 (onSelect)="onItemSelect($event)" (onSelectAll)="onSelectAll($event)"
                                                 ngModel required name="sports">
@@ -132,7 +132,7 @@
                                 <re-captcha (resolved)="resolved($event)"
                                         siteKey="6Lc_erMUAAAAAFnlJh8hYO7Uj9CZW95vTcdzKALA" required class="captcha"
                                         name="response" [(ngModel)]="recap"></re-captcha>
-                                <button type="submit" class="btn regbtn" [disabled]="!f.valid && !recap"
+                                <button type="submit" class="btn regbtn" [disabled]="!(f.valid && recap)"
                                         (click)="resetSelection()" [hidden]="isHidden">Register</button>
                         </div>
                 </div>

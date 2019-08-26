@@ -20,16 +20,16 @@ export class AdminLoginComponent implements OnInit {
   onAdmin(form : NgForm){
     this.ss.postAdmin(form.value).subscribe(
       res => {
-        console.log(res);
+        // console.log(res);
         this.data = res;
         this.token = this.data.token;
         this.ss.setAdmintoken(this.token);
         this.router.navigate(['/admin']);
       }, err => {
-        console.log(err);
+        // console.log(err);
       }
     )
-    console.log(form.value);
+    // console.log(form.value);
     form.reset();
   }
 

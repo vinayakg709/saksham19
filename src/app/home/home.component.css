@@ -462,6 +462,13 @@ table{
 
   /* ----- for Responsiveness -----  */
 
+  @media only screen and (max-width: 1024px){
+    .about{
+      margin: 1rem 0rem;
+      font-size: 1rem;
+    }
+  }
+
 @media only screen and (max-width: 768px) {
 
     .akg{
